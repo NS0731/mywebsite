@@ -215,6 +215,28 @@ const pages = {
         <footer>
             <p>copyright, niyam</p>
         </footer>
+    `,
+
+    contact: `
+        <div class="page-section">
+            <div class="container">
+                <header class="page-header">
+                    <h1>contact me</h1>
+                    <p>say hi!</p>
+                </header>
+
+                <main>
+                    <div class="contact-card">
+                        <p class="contact-label">you can contact me at</p>
+                        <a href="mailto:me@niyam.co.uk" class="contact-email">me@niyam.co.uk</a>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <footer>
+            <p>all rights reserved, copyright, ns31</p>
+        </footer>
     `
 };
 
@@ -230,6 +252,7 @@ function router() {
     }
     if (path === '/photo-film') page = 'photo-film';
     if (path === '/personal') page = 'personal';
+    if (path === '/contact') page = 'contact';
     
     app.innerHTML = pages[page];
     updateNavigation(page);
@@ -241,7 +264,7 @@ function updateNavigation(page) {
         link.classList.remove('active');
     });
     
-    const pathMap = { home: '/', music: '/music', 'photo-film': '/photo-film', personal: '/personal' };
+    const pathMap = { home: '/', music: '/music', 'photo-film': '/photo-film', personal: '/personal', contact: '/contact' };
     document.querySelector(`a[href="${pathMap[page]}"]`).classList.add('active');
 }
 
