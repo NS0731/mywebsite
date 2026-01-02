@@ -277,3 +277,8 @@ document.addEventListener('click', (e) => {
         router();
     }
 });
+
+// Initialize router on page load
+document.addEventListener('DOMContentLoaded', () => {
+    router();
+});
