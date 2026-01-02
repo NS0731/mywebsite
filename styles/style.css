@@ -159,7 +159,7 @@ body::after {
     width: 140px;
     height: 140px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-image: url('/src/images/509241499_18049307630455077_8384849640366132549_n.jpg');
+    background-image: url('/images/509241499_18049307630455077_8384849640366132549_n.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
