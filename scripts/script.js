@@ -98,7 +98,7 @@ const pages = {
                 <header class="header">
                     <div class="profile">
                         <div class="avatar"></div>
-                        <h1>niyam s</h1>
+                        <h1>niyam</h1>
                         <p class="tagline">musician • photo/videographer • content creator</p>
                     </div>
                 </header>
