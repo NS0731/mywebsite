@@ -4,6 +4,23 @@ document.addEventListener('mousemove', (e) => {
     document.documentElement.style.setProperty('--mouse-y', e.clientY + 'px');
 });
 
+// hamburger menu toggle
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// close menu when nav link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
 // dropdown functionality
 let activeDropdown = null;
 let activeWrapper = null;
@@ -150,12 +167,14 @@ const pages = {
             <div class="about-container">
                 <h2>about me</h2>
                 <p>i'm a student with a passion for all things creative. with expertise in music production, photo/videography, and content creation, i bring ideas to life through my creativity and passion.</p>
+                <p>oh, and i like to dress nicely.</p>
                 <div class="skills">
                     <div class="skill-tag">music production</div>
                     <div class="skill-tag">photography</div>
                     <div class="skill-tag">videography</div>
                     <div class="skill-tag">content creation</div>
                     <div class="skill-tag">sound engineering</div>
+                    <div class="skill-tag">fashion</div>
                 </div>
             </div>
         </section>
