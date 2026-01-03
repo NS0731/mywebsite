@@ -232,7 +232,7 @@ const pages = {
         </div>
 
         <footer>
-            <p>copyright, niyam</p>
+            <p>all rights reserved, copyright, ns31</p>
         </footer>
     `,
 
