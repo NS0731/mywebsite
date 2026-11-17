@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>niyam's website</title>
+    <title>niyam — musician and creative</title>
+    <meta name="description" content="niyam — musician, photographer, videographer, and content creator.">
      
     <meta property="og:title" content="niyam">
     <meta property="og:description" content="musician • photo/videographer • content creator">
@@ -11,20 +12,25 @@
     <meta property="og:url" content="https://niyam.co.uk">
     <meta property="og:type" content="website">
     
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <a class="skip-link" href="#app">Skip to content</a>
+
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="nav-container">
             <ul class="nav-menu">
-                <li><a href="/" class="nav-link active">home</a></li>
+                <li><a href="/" class="nav-link active" aria-current="page">home</a></li>
                 <li><a href="/about" class="nav-link">about me</a></li>
                 <li><a href="/music" class="nav-link">music</a></li>
                 <li><a href="/contact" class="nav-link">contact</a></li>
             </ul>
-            <button class="hamburger-menu" id="hamburger">
+            <button class="hamburger-menu" id="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -32,7 +38,7 @@
         </div>
     </nav>
 
-    <div id="app"></div>
+    <main id="app"></main>
 
     <script src="scripts/script.js"></script>
 </body>
