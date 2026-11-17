@@ -99,16 +99,12 @@ const pages = {
                     <div class="profile">
                         <div class="avatar"></div>
                         <h1>niyam</h1>
+                        <p class="alias">(333ns)</p>
                         <p class="tagline">musician • photo/videographer • content creator</p>
                     </div>
                 </header>
 
                 <main>
-                    <section class="intro-section">
-                        <h2>welcome</h2>
-                        <p>welcome to my...website?</p>
-                    </section>
-
                     <section class="social-links">
                         <div class="social-btn-wrapper">
                             <button class="social-btn instagram" data-multi="instagram">
@@ -117,7 +113,7 @@ const pages = {
                             </button>
                             <div class="dropdown-menu" id="instagram-dropdown">
                                 <a href="https://instagram.com/niyam.sh" target="_blank">@niyam.sh</a>
-                                <a href="https://instagram.com/prod.ns31" target="_blank">@prod.ns31</a>
+                                <a href="https://instagram.com/333ns.mp3" target="_blank">@333ns.mp3</a>
                             </div>
                         </div>
 
@@ -128,8 +124,7 @@ const pages = {
                             </button>
                             <div class="dropdown-menu" id="tiktok-dropdown">
                                 <a href="https://tiktok.com/@niyams_" target="_blank">@niyams_</a>
-                                <a href="https://tiktok.com/@prod.ns31" target="_blank">@prod.ns31</a>
-                                <a href="https://tiktok.com/@shotbyns31" target="_blank">@shotbyns31</a>
+                                <a href="https://tiktok.com/@333ns.mp3" target="_blank">@333ns.mp3</a>
                             </div>
                         </div>
 
@@ -139,20 +134,26 @@ const pages = {
                                 <span>youtube</span>
                             </button>
                             <div class="dropdown-menu" id="youtube-dropdown">
-                                <a href="https://youtube.com/@NS31" target="_blank">@NS31</a>
-                                <a href="https://youtube.com/@prod.ns31" target="_blank">@prod.ns31</a>
+                                <a href="https://youtube.com/@333ns.mp3" target="_blank">@333ns.mp3</a>
+                                <a href="https://youtube.com/@ns31" target="_blank">@ns31</a>
                             </div>
                         </div>
 
-                        <a href="https://snapchat.com/t/UmP5mjiW" target="_blank" class="social-btn snapchat">
-                            <i class="fab fa-snapchat"></i>
-                            <span>snapchat</span>
+                        <a href="https://open.spotify.com/artist/3hgYUhIuB2EH5oM3mEMQBV" target="_blank" class="social-btn spotify">
+                            <i class="fab fa-spotify"></i>
+                            <span>spotify</span>
                         </a>
 
-                        <a href="https://soundcloud.com/prodns31" target="_blank" class="social-btn soundcloud">
-                            <i class="fab fa-soundcloud"></i>
-                            <span>soundcloud</span>
-                        </a>
+                        <div class="social-btn-wrapper">
+                            <button class="social-btn soundcloud" data-multi="soundcloud">
+                                <i class="fab fa-soundcloud"></i>
+                                <span>soundcloud</span>
+                            </button>
+                            <div class="dropdown-menu" id="soundcloud-dropdown">
+                                <a href="https://soundcloud.com/333ns" target="_blank">ns (333ns)</a>
+                                <a href="https://soundcloud.com/prodns31" target="_blank">ns31</a>
+                            </div>
+                        </div>
 
                         <a href="https://github.com/NS0731" target="_blank" class="social-btn github">
                             <i class="fab fa-github"></i>
@@ -163,24 +164,38 @@ const pages = {
             </div>
         </div>
 
-        <section class="about-section">
-            <div class="about-container">
-                <h2>about me</h2>
-                <p>i'm a student with a passion for all things creative. with expertise in music production, photo/videography, and content creation, i bring ideas to life through my creativity and passion.</p>
-                <p>oh, and i like to dress nicely.</p>
-                <div class="skills">
-                    <div class="skill-tag">music production</div>
-                    <div class="skill-tag">photography</div>
-                    <div class="skill-tag">videography</div>
-                    <div class="skill-tag">content creation</div>
-                    <div class="skill-tag">sound engineering</div>
-                    <div class="skill-tag">fashion</div>
-                </div>
+        <footer>
+            <p>all rights reserved, © niyam shah</p>
+        </footer>
+    `,
+
+    about: `
+        <div class="page-section about-page">
+            <div class="container">
+                <header class="page-header">
+                    <h1>about me</h1>
+                </header>
+
+                <main>
+                    <section class="about-section">
+                        <div class="about-container">
+                            <p>i'm a student with a passion for all things creative. with expertise in music production, photo/videography, and content creation, i bring ideas to life through my creativity and passion.</p>
+                            <div class="skills">
+                                <div class="skill-tag">music production</div>
+                                <div class="skill-tag">photography</div>
+                                <div class="skill-tag">videography</div>
+                                <div class="skill-tag">content creation</div>
+                                <div class="skill-tag">sound engineering</div>
+                                <div class="skill-tag">fashion</div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
             </div>
-        </section>
+        </div>
 
         <footer>
-            <p>all rights reserved, copyright, ns31</p>
+            <p>all rights reserved, © niyam shah</p>
         </footer>
     `,
 
@@ -189,55 +204,24 @@ const pages = {
             <div class="container">
                 <header class="page-header">
                     <h1>my music</h1>
-                    <p>take a look at my most recent release on soundcloud</p>
+                    <p>listen to my music on spotify</p>
                 </header>
 
                 <main>
-                    <div class="soundcloud-embed">
-                        <!-- PASTE YOUR SOUNDCLOUD EMBED CODE HERE -->
-                        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2232733418&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <div class="spotify-embed">
+                        <iframe src="https://open.spotify.com/embed/artist/3hgYUhIuB2EH5oM3mEMQBV" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="niyam shah on Spotify"></iframe>
                     </div>
                 </main>
             </div>
         </div>
 
         <footer>
-            <p>copyright, niyam</p>
-        </footer>
-    `,
-
-    'photo-film': `
-        <div class="page-section">
-            <div class="container">
-                <header class="page-header">
-                    <h1>photo & film</h1>
-                    <p>coming soon</p>
-                </header>
-            </div>
-        </div>
-
-        <footer>
-            <p>all rights reserved, copyright, ns31</p>
-        </footer>
-    `,
-
-    personal: `
-        <div class="page-section">
-            <div class="container">
-                <header class="page-header">
-                    <h1>personal</h1>
-                    <p>coming soon</p>
-                </header>
-            </div>
-        </div>
-
-        <footer>
-            <p>all rights reserved, copyright, ns31</p>
+            <p>all rights reserved, © niyam shah</p>
         </footer>
     `,
 
     contact: `
-        <div class="page-section">
+        <div class="page-section contact-page">
             <div class="container">
                 <header class="page-header">
                     <h1>contact me</h1>
@@ -246,7 +230,9 @@ const pages = {
 
                 <main>
                     <div class="contact-card">
-                        <p class="contact-label">you can contact me at</p>
+                        <p class="contact-label">for music related inquiries</p>
+                        <a href="mailto:music@niyam.co.uk" class="contact-email">music@niyam.co.uk</a>
+                        <p class="contact-label">for all other inquiries</p>
                         <a href="mailto:me@niyam.co.uk" class="contact-email">me@niyam.co.uk</a>
                     </div>
                 </main>
@@ -254,7 +240,7 @@ const pages = {
         </div>
 
         <footer>
-            <p>all rights reserved, copyright, ns31</p>
+            <p>all rights reserved, © niyam shah</p>
         </footer>
     `
 };
@@ -267,10 +253,8 @@ function router() {
     let page = 'home';
     if (path === '/music') {
         page = 'music';
-        setTimeout(() => updateMusicPage(), 100);
     }
-    if (path === '/photo-film') page = 'photo-film';
-    if (path === '/personal') page = 'personal';
+    if (path === '/about') page = 'about';
     if (path === '/contact') page = 'contact';
     
     app.innerHTML = pages[page];
@@ -283,7 +267,7 @@ function updateNavigation(page) {
         link.classList.remove('active');
     });
     
-    const pathMap = { home: '/', music: '/music', 'photo-film': '/photo-film', personal: '/personal', contact: '/contact' };
+    const pathMap = { home: '/', music: '/music', about: '/about', contact: '/contact' };
     document.querySelector(`a[href="${pathMap[page]}"]`).classList.add('active');
 }
 
